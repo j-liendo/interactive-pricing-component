@@ -1,0 +1,167 @@
+// Palette Primary
+$celeste: hsla(174, 76%, 80%, 1);           //Full Slider Bar
+$turquoise: hsla(174, 86%, 45%, 1);         //Slider Backround
+$seashell: hsla(13, 92%, 95%, 1);           //Discount Background
+$coral: hsla(15, 100%, 70%, 1);             //Discount Text
+$lavender-blue: hsla(226, 100%, 87%, 1);    //CTA Text
+
+// Palette Neutral
+$white: hsla(0, 0%, 100%, 1);               //Pricing Component Background
+$ghost-white: hsla(228, 100%, 99%, 1);      //Main Background
+$magnolia: hsla(226, 68%, 95%, 1);          //Empty Slider Bar
+$light-periwinkle: hsla(222, 49%, 87%, 1);  //Toggle Background
+$cool-grey: hsla(225, 20%, 60%, 1);         //Text
+$space-cadet: hsla(227, 35%, 25%, 1);       //Text & CTA Background
+
+// Font import: Manrope
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+
+    background-color: $ghost-white;
+    color: $cool-grey;
+    font-size: 1.4rem;
+    
+    &-inner {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        &-header{
+            padding: 0 50px 0 50px;
+            text-align: center;
+
+            &-title{
+                color: $space-cadet;
+                font-weight: 800;
+                font-size: 2.8rem;
+            }
+
+            &-subtitle {
+                margin-top: 10px;
+            }
+        }
+
+        &-card{
+            background-color: $white;
+            border-radius: 0.5rem;
+            height: 50vh;
+            width: 35vw;
+            min-width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+
+            &-content{
+                // background-color: aquamarine;
+                display: flex;
+                flex-direction: row;
+                align-content: stretch;
+                flex-wrap: wrap;
+                width: 100%;
+                height: 65%;
+                padding: 5% 10% 5% 10%;
+
+                &-header{
+                    text-transform: uppercase;
+                    width: 50%;
+                    display: flex;
+                    align-items: center;
+                    font-weight: 800;
+                }
+                
+                &-mount{
+                    width: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    #price{
+                        color: $space-cadet;
+                        font-size: 3.2rem;
+                        font-weight: 800;
+                        margin-right: 0.5rem;
+                    }
+                }
+                
+                &-range{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    
+                    #range{
+                        width: 100%;
+                    }
+                }
+                
+                &-option{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                }
+            }
+
+            &-footer{
+                border-top: 1px solid rgba(0, 0, 0, 0.2);
+                display: flex;
+                // background-color: lightpink;
+                width: 100%;
+                height: 35%;
+
+                &-list {
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                }
+
+                &-start {
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    margin-right: 1rem;
+
+                    button {
+                        padding: 10px 30px 10px 30px;
+                        border-radius: 20px;
+                        border: 0;
+                        background-color: $space-cadet;
+                        color: $lavender-blue;
+                    }
+                    button:hover {
+                        background-color: hsl(227, 36%, 22%);
+                    }
+                }
+            }
+        }
+
+        &-footer{
+            font-size: 1.2rem;
+            text-align: center;
+            width: 100%;
+        }
+
+    }
+}
