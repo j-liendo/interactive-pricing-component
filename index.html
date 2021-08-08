@@ -1,92 +1,114 @@
 <!DOCTYPE html>
-  <meta name="viewport" <html lang="en">
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive pricing component</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 
-  <!-- Normalize -->
-  <link rel="stylesheet" href="./css/normalize.css">
+    <title>Frontend Mentor | Interactive pricing component</title>
 
-  <!-- Own style -->
-  <link rel="stylesheet" href="./css/style.css">
+    <!-- Normalize -->
+    <link rel="stylesheet" href="./css/normalize.css" />
 
+    <!-- Own style -->
+    <link rel="stylesheet" href="./css/style.css" />
 </head>
+
 <body>
+    <div class="main">
+        <div class="main-inner">
+            <div class="main-inner-header">
+                <div class="main-inner-header-title">
+                    Simple, traffic-based pricing
+                </div>
+                <div class="main-inner-header-subtitle">
+                    Sign-up for our 30-day trial. No credit card required.
+                </div>
+            </div>
 
-  <div class="main">
-    <div class="main-inner">
-      <div class="main-inner-header">
-        <div class="main-inner-header-title">
-          Simple, traffic-based pricing
+            <div class="main-inner-card">
+                <div class="main-inner-card-content">
+                    <div class="main-inner-card-content-header">
+                        <span><span id="pageviews">100K</span> pageviews</span>
+                    </div>
+
+                    <div class="main-inner-card-content-mount">
+                        <span id="price">$16.00</span>/month
+                    </div>
+
+                    <div class="main-inner-card-content-range">
+                        <input id="range" type="range" min="1" max="5" />
+                    </div>
+
+                </div>
+                <div class="main-inner-card-content-option">
+                    <div class="main-inner-card-content-option-box">
+                        <span>Monthly Billing</span>
+                        <!-- asd -->
+                    </div>
+                    <div class="main-inner-card-content-option-box">
+                        <label class="switch">
+                            <input id="discount" type="checkbox" />
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="main-inner-card-content-option-box">
+                        <span>Yearly Billing <span class="discount">25% discount</span></span>
+                        <!-- asd -->
+                    </div>
+                </div>
+                <div class="main-inner-card-footer">
+                    <div class="main-inner-card-footer-list">
+                        <ul>
+                            <li>Unlimited websites</li>
+                            <br>
+                            <li>100% data ownership</li>
+                            <br>
+                            <li>Email reports</li>
+                        </ul>
+                    </div>
+                    <div class="main-inner-card-footer-start">
+                        <button type="button"><b>Start my trial</b></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-inner-footer">
+                Challenge by
+                <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a
+          >. Coded by <a href="#">Josh7bit</a>.
+            </div>
         </div>
-        <div class="main-inner-header-subtitle">
-          Sign-up for our 30-day trial. No credit card required.
-        </div>
-      </div>
+    </div>
 
-      <div class="main-inner-card">
-        <div class="main-inner-card-content">
+    <!-- Scripts -->
+    <!-- Styles -->
+    <script src="./js/app.js"></script>
 
-          <div class="main-inner-card-content-header">
-            <p>100K pageviews</p>
-          </div>
-
-          <div class="main-inner-card-content-mount">
-            <span id = "price">$16.00</span>/month 
-            
-          </div>
-          
-          
-          <div class="main-inner-card-content-range">
-            <input id="range" type="range" min="0" max="32">
-          </div>
-          
-          <div class="main-inner-card-content-option">options</div>
-        </div>
-        <div class="main-inner-card-footer">
-          <div class="main-inner-card-footer-list">
-            <ul>
-              <li>Unlimited websites</li>
-              <li>100% data ownership</li>
-              <li>Email reports</li>
-            </ul>
-          </div>
-          <div class="main-inner-card-footer-start">
-            <button>Start my trial</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="main-inner-footer">
+    <!-- 
+      Simple, traffic-based pricing
+      Sign-up for our 30-day trial. No credit card required. 
+    
+      Pageviews
+      $ /month
+    
+      Monthly Billing
+      Yearly Billing 25% discount
+    
+      Unlimited websites
+      100% data ownership
+      Email reports
+    
+      Start my trial
+      
+      <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
         Coded by <a href="#">Josh7bit</a>.
-      </div>
-    </div>
-  </div>
-
-  <!-- 
-  Simple, traffic-based pricing
-  Sign-up for our 30-day trial. No credit card required. 
-
-  Pageviews
-  $ /month
-
-  Monthly Billing
-  Yearly Billing 25% discount
-
-  Unlimited websites
-  100% data ownership
-  Email reports
-
-  Start my trial
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Josh7bit</a>.
-  </div> -->
+      </div> 
+    -->
 </body>
+
 </html>
